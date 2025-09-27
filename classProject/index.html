@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 80px;
+            width: 100%;
+            /* background-color: antiquewhite;  */
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            margin-left: 20px;
+
+
+        }
+
+        h2 {
+            color: rgb(0, 136, 111);
+            margin-top: 23px;
+            font-weight: bold;
+        }
+
+        #img1 {
+            height: 47px;
+            width: 47px;
+            margin-top: 15px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        .nav {
+            height: 80px;
+            width: 50%;
+            /* background-color: aqua; */
+            margin-left: 450px;
+            display: flex;
+
+
+        }
+
+        .nav ul {
+
+            display: flex;
+
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: 35px;
+            font-size: 25px;
+            /* color: black; */
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        button {
+
+            background-color: rgb(0, 136, 111);
+            border: 1px solid rgb(0, 136, 111);
+            font-size: 19px;
+            text-align: center;
+            /* align-items: center; */
+            padding: 28px;
+            color: white;
+            font-weight: bold;
+            width: 132px;
+            padding-right: 55px;
+        }
+
+        .aboutus {
+            min-height: 750px;
+            width: 100%;
+            background-color: red;
+            display: block;
+
+        }
+
+        #about {
+            background-image: url('images/carousel-2.jpg');
+            min-height: 750px;
+
+            background-size: cover;
+            background-position: center;
+
+
+        }
+
+        /* .container2{
+              width: 100%;
+              height: 400px;
+              display: flex;
+              margin-left: 100px;
+              margin-top: 5%;
+              /* background-color: red; */
+        /* } */
+        /* .box1{
+            height: 300px;
+            width: 300px;
+         background-color:rgb(246, 246, 250);
+            margin-left: 25px;
+            
+        } */
+        /* .box2{
+            height: 300px;
+            width: 300px;
+             background-color:rgb(246, 246, 250);
+                margin-left: 25px;
+            
+        } */
+        .box3 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(246, 246, 250);
+            margin-left: 25px;
+
+        }
+
+        /* .box4{
+            height: 300px;
+            width: 300px;
+            background-color:rgb(246, 246, 250);
+                margin-left: 25px;
+            
+        } */
+        .margin {
+            margin-left: 150px;
+            margin-top: 30px;
+        }
+
+        .services-outer {
+            width: 80%;
+            margin: 100px auto;
+            margin-top: 70px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .services-container {
+            width: 30%;
+            height: 300px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3 ease-in-out;
+        }
+
+        .services-container h3 {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .services-container h2 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #DF1761;
+            margin-bottom: 10px;
+        }
+
+        .services-container p {
+            margin-top: 10px;
+            font-size: 18px;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        .services-container:hover {
+            margin-top: 10px;
+            font-size: 18px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            background-image: linear-gradient(to top, rgb(0, 136, 111), #afafb2);
+            color: white;
+        }
+
+       .dabba-outer {
+    width: 80%;
+    margin: 100px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;  /* 👈 isse niche niche aayega */
+    gap: 20px;
+}
+
+
+        .dabba-container {
+            width: 50%;
+            height: 514px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+
+            transition: 0.3 ease-in-out;
+        }
+           .quad-outer {
+    width: 90%;
+    margin: 100px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;  /* 👈 isse niche niche aayega */
+    gap: 20px;
+}
+
+
+        .quad-container {
+            width: 50%;
+            height: 514px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+
+              transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .display {
+          display: flex;
+        }
+
+        /* .quad-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image covers the box */
+  /* display: block;
+} */ */
+ img{
+      width: 100%;
+  height: 100%;
+  object-fit: cover; 
+   display: block;
+ }
+
+.quad-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 136, 111, 0.3);
+}
+  .course-outer {
+    width: 80%;
+    margin: 100px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;  /* 👈 isse niche niche aayega */
+    gap: 20px;
+}
+
+
+        .course-container {
+            width: 50%;
+            height: 404px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+
+            transition: 0.3 ease-in-out;
+        }
+        .course-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 136, 111, 0.3);
+}
+        .stars {
+          display: flex;
+        }
+         .team-outer {
+    width: 80%;
+    margin: 80px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;  /* 👈 isse niche niche aayega */
+    gap: 20px;
+}
+
+
+        .team-container {
+            width: 50%;
+            height: 390px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+
+            transition: 0.3 ease-in-out;
+        }
+        .team-container:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0,136,111,0.3);
+        }
+          .last-outer {
+    width: 80%;
+    margin: 80px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;  /* 👈 isse niche niche aayega */
+    gap: 20px;
+}
+
+
+        .last-container {
+            width: 50%;
+            height: 387px;
+            border: 2px solid lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+
+            transition: 0.3 ease-in-out;
+        }
+        .last-container:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgb(0,136,111,0.3);
+
+        }
+     .footer {
+      background: #0c1336;
+      color: #fff;
+      padding: 50px 20px 20px;
+    }
+
+    .footer .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer h5 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer .quick-links a {
+      display: block;
+      color: #ddd;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+    .footer .quick-links a:hover {
+      color: #00d1ff;
+    }
+
+    .footer .contact p {
+      margin: 8px 0;
+      color: #ccc;
+    }
+
+    .footer .contact i {
+      margin-right: 10px;
+      color: #00d1ff;
+    }
+
+    .footer .social i {
+      margin: 0 10px 0 0;
+      font-size: 18px;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .footer .social i:hover {
+      color: #00d1ff;
+    }
+
+    .footer .gallery img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .footer .newsletter p {
+      margin-bottom: 15px;
+      color: #ccc;
+    }
+
+    .footer .newsletter input {
+      padding: 10px;
+      width: 70%;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .footer .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background: #00d1ff;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .footer .newsletter button:hover {
+      background: #008bb5;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      margin-top: 30px;
+      padding-top: 15px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .footer-bottom a {
+      color: #00d1ff;
+      text-decoration: none;
+    }
+
+    .footer-bottom-links {
+      margin-top: 10px;
+    }
+
+    .footer-bottom-links a {
+      margin: 0 10px;
+      color: #ddd;
+      text-decoration: none;
+    }
+    .footer-bottom-links a:hover {
+      color: #00d1ff;
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00d1ff;
+      padding: 12px 15px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .scroll-top:hover {
+      background: #008bb5;
+    }
+
+    @media (max-width: 900px) {
+      .footer .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .footer .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">&nbsp;
+            <img src="images.png" alt="" id="img1">
+            <h2>eLearning</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#" style="color: rgb(0, 136, 111);">Home</a></li>
+                <li><a href="#">aboutUs</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Contactus</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <button>Join</button>
+        </div>
+    </div>
+    <div class="aboutus" id="about">
+        <h1
+            style="color: white;font-size: 80px;padding-top:200px;padding-left: 10%;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            The Best Online<br /> Learning
+            Platform</h1><br />
+        <p style="color: white; text-align: justify;padding-left: 10%; font-weight: bold;font-size: 20px;">Lorem ipsum
+            dolor si Dolorem nesciunt eaque quos
+            inv<br />entore nam. Cupiditate labore totam nihil corporis vero at quia id veritatis perferendis,<br />
+            repudiandae cumque saepe ut nostrum consequatur eum <br />odit adipisci! Vel itaque et, excepturi culpa
+            provident rerum soluta. Sint odit fugiat vel facilis voluptates aspernatur ipsa.</p>
+        <div class="margin">
+            <input type="button" value="ReadMore"
+                style="padding: 25px; border: 1px solid;width: 200px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 10px;color: white;font-size: 20px;" />
+            <input type="button" value="ReadMore"
+                style="padding: 25px; margin-left: 25px;border: 1px solid;width: 200px;border:1px solid white;margin-top: 10px;color: black;font-size: 20px;" />
+
+        </div>
+    </div>
+    <!-- <div class="container2">
+        <div class="box1">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    </div> -->
+    <section id="services">
+
+        <div class="services-outer">
+            <div class="services-container">
+                <p><i class="fa-solid fa-graduation-cap"
+                        style="color:rgb(0, 136, 111); font-size:60px;margin-top: 20px;"></i></p>
+                <h3 style="margin-top: 10px;font-family: monospace;">Skilled Instructor</h3>
+                <p style="color: gray;">Diam elitr casd set at
+                    Lorem ipsum dolor sit amet consectetur adipisicing<br /> elit. Ducimus, iure.
+                </p>
+            </div>
+            <div class="services-container">
+                <p><i class="fa-solid fa-globe" style="color:rgb(0, 136, 111); font-size:60px;margin-top: 20px;"></i>
+                </p>
+                <h3 style="margin-top: 10px;font-family: monospace;">Online Classes</h3>
+                <p style="color: gray;">Diam elitr casd set at
+                    Lorem ipsum dolor sit amet consectetur adipisicing<br /> elit. Ducimus, iure.
+                </p>
+            </div>
+            <div class="services-container">
+                <p><i class="fa-solid fa-book-open"
+                        style="color:rgb(0, 136, 111); font-size:60px;margin-top: 20px;"></i></p>
+                <h3 style="margin-top: 10px;font-family: monospace;">Home Projects</h3>
+                <p style="color: gray;">Diam elitr casd set at
+                    Lorem ipsum dolor sit amet consectetur adipisicing<br /> elit. Ducimus, iure.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="dabba">
+
+        <div class="dabba-outer">
+            <div class="dabba-container">
+                <img src="images/about (1).jpg" alt="" style="height: 520px;width: 100%;">
+            </div>
+
+            <div style="flex:1; padding:20px;">
+                <h2 style="color: rgb(0, 136, 111); margin-left: 15px;">About Us</h2>
+                <h1 style="margin: 10px;font-size: 40px;font-weight: 600px;font-family: serif;">Welcome to eLEARNING
+                </h1><br />
+                <p style="color: gray; margin-left: 10px;font-size: 17px;">Tempor erat elitr rebum at clita. Diam dolor
+                    diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+               <br />
+                <p style="color: gray; margin-left: 10px;font-size: 17px;">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p><br/>
+                <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;margin-left: 15px;"></i></span>
+                <span style="color: gray;font-size: 20px;">Skilled Instructors</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;"></i></span>
+                <span style="color: gray;font-size: 20px;">online Classes</span><br/>
+                 <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;margin-left: 15px;"></i></span>
+                <span style="color: gray;font-size: 20px;">Skilled Instructors</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;"></i></span>
+                <span style="color: gray;font-size: 20px;">International Certificate</span><br/>
+                 <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;margin-left: 15px;"></i></span>
+                <span style="color: gray;font-size: 20px;">Skilled Instructors</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <span><i class="fa-solid fa-arrow-right" style="color:rgb(0, 136, 111); font-size:23px;margin-top: 20px;"></i></span>
+                <span style="color: gray;font-size: 20px;">Online Classes</span>
+
+             
+            <input type="button" value="ReadMore"
+                style="padding: 20px; border: 1px solid;width: 200px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 30px; margin-left:20px;color: white;font-size: 20px;" />
+          
+
+
+
+            </div>
+         
+            
+        </div>
+
+
+    </section>
+    <h2 style="color: rgb(0, 136, 111); margin-left: 15px;text-align: center;">CATEGORIES</h2>
+    <h1 style="margin: 10px;font-size: 40px;font-weight: 600px;font-family: serif;text-align: center;">Courses Categories</h1>
+
+    <!--QUAD IMAG-->
+      <section id="quad">
+
+        <div class="quad-outer">
+            <div class="quad-container">
+               <img src="images/cat-1.jpg" alt="" width="672px;"> 
+               <div class="display">
+               <img src="images/cat-2.jpg" alt="" width="336px;" style="float: left;height: 250px;margin-top: 12px;"> 
+               <img src="images/cat-3.jpg" alt="" width="300px;" style="float: left;height: 250px;margin-top: 12px;"> 
+               </div>
+               
+            </div>
+            <div class="quad-container">
+        <img src="images/cat-4.jpg" alt="" width="672px;" style="height:520px;">
+            </div>
+
+        </div>
+    </section>
+  <h2 style="color: rgb(0, 136, 111); margin-left: 15px;text-align: center;">Courses</h2>
+    <h1 style="margin: 10px;font-size: 40px;font-weight: 600px;font-family: serif;text-align: center;">Popular Courses</h1>
+    <!--dollar-->
+    <section id="services">
+
+        <div class="course-outer">
+            <div class="course-container">
+                <img src="images/course-1.jpg" alt="" style="height: 228px;width: 400px;">
+                <h1 style="font-size: 30px; margin-top: 20px;">$149.00</h1>
+                 <div class="stars">
+                    <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                   <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                </div>
+                <h1 style="font-size: 30px; margin-top: 20px;text-align: center;font-size: 24px;">Web Design & Development Course for Beginners</h1>
+                
+            </div>
+            <div class="course-container">
+               <img src="images/course-2.jpg" alt=""style="height: 228px;width: 400px;">
+                <h1 style="font-size: 30px;margin-top: 20px;">$149.00</h1>
+                 <div class="stars">
+                    <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                   <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                </div>
+                 <h1 style="font-size: 30px; margin-top: 20px;text-align: center;font-size: 24px;">Web Design & Development Course for Beginners</h1>
+
+              
+            </div>
+            <div class="course-container">
+                <img src="images/course-3.jpg" alt=""style="height: 228px;width: 400px;">
+                  <h1 style="font-size: 30px;margin-top: 20px;">$149.00</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                   <i class="fa-solid fa-star" style="color:rgb(0, 136, 111);"></i>
+                </div>
+                 <h1 style="font-size: 30px; margin-top: 20px;text-align: center;font-size: 24px;">Web Design & Development Course for Beginners</h1>
+            </div>
+
+        </div>
+    </section>
+    <h2 style="color: rgb(0, 136, 111); margin-left: 15px;text-align: center;">Instructors</h2>
+    <h1 style="margin: 10px;font-size: 40px;font-weight: 600px;font-family: serif;text-align: center;">Expert Instructors</h1>
+<section id="team">
+
+        <div class="team-outer">
+            <div class="team-container">
+                <img src="images/team-1.jpg" alt="" width="300px;">
+                <h4 style="margin-top: 17px; font-size: 25px;">Instructor Name</h4>
+                <p style="color: gray; font-size: 15px;">Designation</p>
+            </div>
+            <div class="team-container">
+               <img src="images/team-2.jpg" alt="" width="300px">
+                <h4 style="margin-top: 17px; font-size: 25px;">Instructor Name</h4>
+                <p style="color: gray; font-size: 15px;">Designation</p>
+            </div>
+            <div class="team-container">
+               <img src="images/team-3.jpg" alt="" width="300px">
+                <h4 style="margin-top: 17px; font-size: 25px;">Instructor Name</h4>
+                <p style="color: gray; font-size: 15px;">Designation</p>
+            </div>
+             <div class="team-container">
+               <img src="images/team-4.jpg" alt="" width="300px">
+                <h4 style="margin-top: 17px; font-size: 25px;">Instructor Name</h4>
+                <p style="color: gray; font-size: 15px;">Designation</p>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="last">
+
+        <div class="last-outer">
+            <div class="last-container">
+                <img src="images/cl.jpeg" alt="" width="300px;" style="border-radius: 700px;">
+                <h4 style="margin-top: 17px; font-size: 25px;">Client Name</h4>
+                <p style="color: gray; font-size: 15px;">Profession</p>
+                  <input type="button" value="lorem hiw yoissbd bb bdhg hhyy tutin "
+                style="padding:20px; border: 1px solid;width: 250px;height:500px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 10px; color: white;text-align: center;"/>
+          
+            </div>
+            <div class="last-container">
+               <img src="images/cl.jpeg" alt="" width="300px" style="border-radius: 700px;">
+                <h4 style="margin-top: 17px; font-size: 25px;">Client Name</h4>
+                <p style="color: gray; font-size: 15px;">Profession</p>
+                  <input type="button" value="lorem hiw yoissbd bb bdhg hhyy tutin "
+                style="padding:20px; border: 1px solid;width: 250px;height:500px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 10px; color: white;text-align: center;"/>
+          
+            </div>
+            <div class="last-container">
+               <img src="images/cl.jpeg" alt="" width="300px" style="border-radius: 700px;">
+                <h4 style="margin-top: 17px; font-size: 25px;" style="border-radius: 700px;">Client Name</h4>
+                <p style="color: gray; font-size: 15px;">Profession</p>
+                  <input type="button" value="lorem hiw yoissbd bb bdhg hhyy tutin "
+                style="padding:20px; border: 1px solid;width: 250px;height:500px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 10px; color: white;text-align: center;"/>
+          
+            </div>
+             <div class="last-container">
+               <img src="images/cl.jpeg" alt="" width="300px" style="border-radius: 700px;">
+                <h4 style="margin-top: 17px; font-size: 25px;">Client Name</h4>
+                <p style="color: gray; font-size: 15px;">Profession</p>
+                
+                <input type="button" value="lorem hiw yoissbd bb bdhg hhyy tutin "
+                style="padding:20px; border: 1px solid;width: 250px;height:500px;background-color:rgb(0, 136, 111);border:1px solid rgb(0, 136, 111);margin-top: 10px; color: white;text-align: center;"/>
+          
+
+
+            </div>
+            
+
+        </div>
+    </section>
+   <footer class="footer">
+    <div class="container">
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h5><span style="color:#00d1ff">Quick</span> Link</h5>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">FAQs & Help</a>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact">
+        <h5>Contact</h5>
+        <p><i class="fa-solid fa-location-dot"></i>123 Street, New York, USA</p>
+        <p><i class="fa-solid fa-phone"></i>+012 345 67890</p>
+        <p><i class="fa-solid fa-envelope"></i>info@example.com</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+
+      
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h5>Newsletter</h5>
+        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+        <!-- <form>
+          <input type="email" placeholder="Your email">
+          <button type="submit">SignUp</button>
+        </form> -->
+      </div>
+    </div>
+<br/><br/>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      © Your Site Name, All Right Reserved. Designed By <a href="#">HTML Codex</a><br>
+      Distributed By <a href="#">ThemeWagon</a>
+      <div class="footer-bottom-links">
+        <a href="#">Home</a>
+        <a href="#">Cookies</a>
+        <a href="#">Help</a>
+        <a href="#">FAQs</a>
+      </div>
+    </div>
+  </footer>
+
+
+  </div>
+
+
+</body>
+
+</html>
